@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bidirectional PostMessage System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PostMessage Communication Hub</h1>
+        
+        <div class="control-panel">
+            <h2>Add an iframe</h2>
+            <div class="input-group">
+                <input type="text" id="iframe-url" placeholder="Enter URL to embed (e.g., https://example.com)">
+                <button id="add-iframe">Add iframe</button>
+            </div>
+        </div>
+        
+        <div class="communication-panel">
+            <div class="message-input">
+                <h2>Send a message</h2>
+                <textarea id="message-content" placeholder="Type your message here..."></textarea>
+                <button id="send-message">Send Message to All</button>
+            </div>
+            
+            <div class="message-log">
+                <h2>Message Log</h2>
+                <div id="log-container"></div>
+            </div>
+        </div>
+        
+        <div class="iframe-container" id="iframe-container">
+            <h2>Embedded iframes</h2>
+            <!-- iframes will be added here dynamically -->
+        </div>
+    </div>
+
+    <script type="module" src="config.js"></script>
+    <script type="module" src="script.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
